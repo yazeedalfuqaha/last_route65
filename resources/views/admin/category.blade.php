@@ -45,6 +45,12 @@
             border:3px solid #000;
         }
 
+
+        table , td {
+            font-weight: bold;
+            border:1px solid #000;
+        }
+
        
         
 
@@ -101,12 +107,17 @@
         <td>Action</td>
     </tr>
 
+
+    @foreach($data as $info)
+
     <tr>
-        <td>Beef</td>
+        <td>{{$info->category_name;}}</td>
         <td>
-            <a href="" class="btn btn-danger">Delete</a>
+            <a href="{{url('delete_category' , $info->id)}}" onclick="confirmation(event)"><i class='bx bxs-trash-alt' style='color:#fc0606; font-size: 35px;'></i>
+</a>
         </td>
     </tr>
+    @endforeach
    </table>
 
 		
@@ -115,5 +126,35 @@
 	
 
 	@include('admin.js')
+
+    <script>
+
+function confirmation(ev) {
+    ev.preventDefault(); // This is optional, depends on your use case
+
+    var urlToRedirect = ev.currentTarget.getAttribute('href');
+
+    console.log(urlToRedirect);
+
+    swal({
+        title: "Are you sure to delete this ?",
+        text: "You won't be able to revert this delete.",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+    })
+    .then((willCancel) => {
+        if (!willCancel) {
+            // The user clicked cancel or closed the dialog
+            // You might add handling for this scenario if needed
+        } else {
+            // The user clicked on "OK"
+            window.location.href = urlToRedirect;
+        }
+    });
+}
+
+
+    </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!--=============================
         WHY CHOOSE START
     ==============================-->
-    <section class="fp__why_choose mt_100 xs_mt_70">
+    <section class="fp__why_choose mt_100 xs_mt_70" >
         <div class="container">
             <div class="row wow fadeInUp" data-wow-duration="1s">
                 <div class="col-md-8 col-lg-7 col-xl-6 m-auto text-center">

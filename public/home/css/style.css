@@ -79,7 +79,7 @@ button {
 }
 
 :root {
-    --colorPrimary: #F86F03;
+    --colorPrimary: #000;
     --paraColor: #494949;
     --colorBlack: #010f1c;
     --colorWhite: #ffffff;
@@ -1094,8 +1094,10 @@ button {
     WHY CHOOSE START
 ============================*/
 .fp__why_choose {
+
     padding-bottom: 25px;
     padding: 0;
+    /* background-color: #000; */
 }
 
 .fp__choose_single {
