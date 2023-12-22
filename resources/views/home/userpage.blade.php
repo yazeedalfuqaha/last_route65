@@ -27,7 +27,7 @@
 
 
 
-   @include('home.offer')
+   @include('home.slider2')
 
 
 
@@ -37,7 +37,7 @@
 
 
 
-   @include('home.slider2')
+   
 
 
 

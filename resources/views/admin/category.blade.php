@@ -20,7 +20,7 @@
 
             font-size:40px;
             padding-bottom:40px;
-            font-style: italic;
+            
            
         }
 
@@ -94,7 +94,7 @@
 
         <input type="text" name="category" placeholder="Write Category Name">
 
-        <button class="button button2">Add Category</button>
+        <button class="button button2" >Add Category</button>
 
         </form>
 
@@ -153,6 +153,10 @@ function confirmation(ev) {
         }
     });
 }
+
+
+
+
 
 
     </script>

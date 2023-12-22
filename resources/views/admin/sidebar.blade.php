@@ -18,15 +18,15 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Analytics</span>
+				<a href="{{url('/view_menu')}}">
+				<i class='bx bx-food-menu'></i>
+					<span class="text">Menu</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/show_product">
 					<i class='bx bxs-message-dots' ></i>
-					<span class="text">Message</span>
+					<span class="text">Show Menu</span>
 				</a>
 			</li>
 			<li>
